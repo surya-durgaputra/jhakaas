@@ -1,0 +1,16 @@
+.sidebarNav{
+    /* border-radius: 3px; */
+    padding: 0 10px 10px 10px;
+    
+    
+}
+.sidebarNav .item{
+    /* padding: 10px; */
+    cursor: pointer;
+    background: #FFE0B5;
+}
+.sidebarNav .item:hover{
+    background: #FFD52D;
+    font-weight: bold;
+    color: black;
+}

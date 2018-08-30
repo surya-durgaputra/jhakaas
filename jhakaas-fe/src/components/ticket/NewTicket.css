@@ -1,0 +1,9 @@
+.ticket-description-label{
+    font-weight: bold;
+}
+.form{
+    background-color: #CED3DC;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
