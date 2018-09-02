@@ -15,8 +15,9 @@
     color: black;
 }
 
-/* .sidebarNav .item.active{
-    background: #FFD52D;
+.sidebarNav .item.active{
+    background: rgb(255, 204, 1);
     font-weight: bold;
     color: black;
-} */
+    border: none;
+}

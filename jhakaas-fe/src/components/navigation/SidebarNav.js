@@ -20,35 +20,34 @@ class SidebarNav extends Component {
     
     setActiveMenuItem = activeMenuItem => this.setState({...this.state, activeMenuItem: activeMenuItem});
 
-    handleClick = e => this.setActiveMenuItem(e.target.name)
+    handleClick = e => { this.setActiveMenuItem(e.currentTarget.getAttribute('name')) }
 
     render() { 
-        console.log(this.state)
         return ( 
             <div className="d-flex flex-column sidebarNav list-group">
                 <div name="newTickets" 
                     className={"item list-group-item " + (this.getActiveState() === "newTickets" ? "active" : "")}
-                    onClick={this.handleClick}
+                    onClick={(e)=>this.handleClick(e)}
                     >New Tickets
                 </div>
                 <div name="priorityTickets" 
                     className={"item list-group-item " + (this.getActiveState() === "priorityTickets" ? "active" : "")}
-                    onClick={()=>this.handleClick()}
+                    onClick={(e)=>this.handleClick(e)}
                     >Priority Tickets
                 </div>
                 <div name="openTickets" 
                     className={"item list-group-item " + (this.getActiveState() === "openTickets" ? "active" : "")}
-                    onClick={()=>this.handleClick()}
+                    onClick={(e)=>this.handleClick(e)}
                     >Open Tickets
                 </div>
                 <div name="allTickets" 
                     className={"item list-group-item " + (this.getActiveState() === "allTickets" ? "active" : "")}
-                    onClick={()=>this.handleClick()}
+                    onClick={(e)=>this.handleClick(e)}
                     >All Tickets
                 </div>
                 <div name="createTicket" 
                     className={"item list-group-item " + (this.getActiveState() === "createTicket" ? "active" : "")}
-                    onClick={this.handleClick}
+                    onClick={(e)=>this.handleClick(e)}
                     >Create Ticket
                 </div>
             </div>

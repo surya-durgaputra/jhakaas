@@ -1,14 +1,152 @@
-[
-    { "id": 0,
-        "animation": "card",
-        "title": "Vitamin Juice",
+{
+  "entity":{
+    "tickets":[
+      { "id": 0,
+        "to": "intermart@intnet.mu",
+        "from": "myawesomecompany@gmail.com",
+        "subject": "Need a jump",
         "description": "Need a jump on your vitamins while drinking? Tired of popping the pills? Drink our vitamin enhanced juice, available in several flavours.",
-        "price": 25.99
+        "department":"R&D",
+        "channel":"email",
+        "priority":"high",
+        "type":"major",
+        "assignedTo":"user1@gmail.com",
+        "status":"open"
       },
       { "id": 1,
-        "animation": "card",
-        "title": "Vitamins pack",
-        "description": "Need a jump on your vitamins while drinking? Tired of popping the pills? Drink our vitamin enhanced juice, available in several flavours.",
-        "price": 4.99
+        "to": "12345678",
+        "from": "myawesomecompany@gmail.com",
+        "subject": "Duis autem vel",
+        "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.",
+        "department":"R&D",
+        "channel":"call",
+        "priority":"high",
+        "type":"major",
+        "assignedTo":"user1@gmail.com",
+        "status":"assigned"
+      },
+      { "id": 2,
+        "to": "2345678",
+        "from": "myawesomecompany@gmail.com",
+        "subject": "Diam nonumy eirmod",
+        "description": "Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "department":"R&D",
+        "channel":"call",
+        "priority":"medium",
+        "type":"major",
+        "assignedTo":"user1@gmail.com",
+        "status":"closed"
+      },
+      { "id": 3,
+        "to": "dreamprice@intnet.mu",
+        "from": "myawesomecompany@gmail.com",
+        "subject": "At vero eos",
+        "description": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.",
+        "department":"R&D",
+        "channel":"email",
+        "priority":"high",
+        "type":"major",
+        "assignedTo":"nobody@gmail.com",
+        "status":"unassigned"
+      },
+      { "id": 4,
+        "to": "kingsavers@intnet.mu",
+        "from": "myawesomecompany@gmail.com",
+        "subject": "Et accusam et",
+        "description": "Et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        "department":"R&D",
+        "channel":"email",
+        "priority":"low",
+        "type":"minor",
+        "assignedTo":"user3@gmail.com",
+        "status":"open"
+      },
+      { "id": 5,
+        "to": "monoprix@intnet.mu",
+        "from": "myawesomecompany@gmail.com",
+        "subject": "lorem ipsum",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. , sed diam voluptua.",
+        "department":"R&D",
+        "channel":"email",
+        "priority":"medium",
+        "type":"minor",
+        "assignedTo":"user3@gmail.com",
+        "status":"open"
       }
-]
+    ],
+    "departments":["R&D", "Operations"],
+    "channels":["email", "call"],
+    "types":["major", "minor"],
+    "status":["open","unassigned","assigned","closed"],
+    "users":[
+      {
+        "id":0,
+        "name": "Jhumroo",
+        "lastName": "Jindal",
+        "email":"jj@gmail.com",
+        "role":"user"
+      },
+      {
+        "id":1,
+        "name": "Jhumroo",
+        "lastName": "Jindal",
+        "email":"jj@gmail.com",
+        "role":"tech"
+      },
+      {
+        "id":2,
+        "name": "Sapna",
+        "lastName": "Sharma",
+        "email":"ss@gmail.com",
+        "role":"admin"
+      }
+    ],
+    "customers":[
+      {
+        "id":0,
+        "name": "Kingsavers",
+        "phone":"123456",
+        "email":"ks@gmail.com",
+        "addressStreet":"hunter street",
+        "addressCity":"Port Louis"
+      },
+      {
+        "id":1,
+        "name": "Dreamprice",
+        "phone":"345678",
+        "email":"dp@gmail.com",
+        "addressStreet":"tanner street",
+        "addressCity":"Phoenix"
+      },
+      {
+        "id":2,
+        "name": "Intermart",
+        "phone":"234567",
+        "email":"im@gmail.com",
+        "addressStreet":"punter street",
+        "addressCity":"Grand Bay"
+      }
+    ]
+  },
+  "domain":{
+    "isAdmin":"false",
+    "menu":{
+      "admin":{
+        "activeMenu":"department",
+        "entries":[
+          {"department":"Department"},
+          {"priority":"Priority"},
+          {"channel":"Channel"},
+          {"type":"Type"}
+        ]
+      },
+      "user":{
+        "activeMenu":"createTicket",
+        "entries":[
+          {"allTickets":"All Tickets"}, 
+          {"createTicket":"Create Ticket"}
+        ]
+      }
+    }
+  }
+}

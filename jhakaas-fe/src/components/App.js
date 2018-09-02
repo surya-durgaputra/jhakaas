@@ -1,29 +1,24 @@
 import React, { Component } from 'react';
-import Navbar from './navigation/Navbar'
-import SidebarNav from './navigation/SidebarNav'
-import SidebarNavAdmin from './admin/SidebarNavAdmin'
-import Ticket from './ticket/Ticket'
-import NewTicket from './ticket/NewTicket'
+
 import './App.css';
+import Dashboard from './startup/Dashboard';
+import Login from './startup/Login';
+import data from '../data/data'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      loggedIn: true,
+      isAdmin: true
+    }
+  }
   render() {
     return (
-      <div className="App">
-        <Navbar/>
-        <div className="container-fluid">
-          <div className="row no-gutters">
-            <div className="col-md-2">
-              <SidebarNav></SidebarNav>
-              <SidebarNavAdmin></SidebarNavAdmin>
-            </div>
-            <div className="col-md-10">
-              <NewTicket></NewTicket>
-              {/* <Ticket></Ticket> */}
-            </div>
-          </div>
-        </div>
+      <div className="container-fluid App pt-5">
+        {this.state.loggedIn ? <Dashboard data={data} /> : <Login/>}
       </div>
+       
     );
   }
 }
