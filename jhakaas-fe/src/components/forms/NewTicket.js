@@ -24,36 +24,36 @@ const NewTicket = (props) => {
             </div>
             <div className="form-group form-row">
                 <div className="form-group col-md-2 offset-md-1">
-                    <select className="custom-select">
-                        <option selected>Department</option>
+                    <select className="custom-select" defaultValue="0">
+                        <option value="0">Department</option>
                         <option value="1">Operations</option>
                         <option value="2">R&amp;D</option>
                     </select>
                 </div>
                 <div className="form-group col-md-2">
-                    <select className="custom-select">
-                        <option selected>Channel</option>
+                    <select className="custom-select" defaultValue="0">
+                        <option value="0">Channel</option>
                         <option value="1">Operations</option>
                         <option value="2">R&amp;D</option>
                     </select>
                 </div>
                 <div className="form-group col-md-2">
-                    <select className="custom-select">
-                        <option selected>Priority</option>
+                    <select className="custom-select" defaultValue="0">
+                        <option value="0">Priority</option>
                         <option value="1">Operations</option>
                         <option value="2">R&amp;D</option>
                     </select>
                 </div>
-                <div className="form-group col-md-2">
+                <div className="form-group col-md-2" defaultValue="0">
                     <select className="custom-select">
-                        <option selected>Type</option>
+                        <option value="0">Type</option>
                         <option value="1">Operations</option>
                         <option value="2">R&amp;D</option>
                     </select>
                 </div>
-                <div className="form-group col-md-2">
+                <div className="form-group col-md-2" defaultValue="0">
                     <select className="custom-select">
-                        <option selected>Assigned To</option>
+                        <option value="0">Assigned To</option>
                         <option value="1">Operations</option>
                         <option value="2">R&amp;D</option>
                     </select>

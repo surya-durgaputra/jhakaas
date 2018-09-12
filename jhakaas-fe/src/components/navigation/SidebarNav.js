@@ -20,12 +20,24 @@ class SidebarNav extends Component {
     
     setActiveMenuItem = activeMenuItem => this.setState({...this.state, activeMenuItem: activeMenuItem});
 
-    handleClick = e => { this.setActiveMenuItem(e.currentTarget.getAttribute('name')) }
-
+    //handleClick = e => { this.setActiveMenuItem(e.currentTarget.getAttribute('name')) }
+    
     render() { 
         return ( 
             <div className="d-flex flex-column sidebarNav list-group">
-                <div name="newTickets" 
+                {this.props.user.entries.map((item, id)=>(
+                    <div name={Object.keys(item)[0]}
+                        key={id}
+                        onClick={(e)=>this.props.handleClick(e)} 
+                        className={
+                            "item list-group-item " 
+                            + (Object.keys(item)[0] === this.props.user.activeMenu ? "active" : "")
+                    }>
+                        {Object.values(item)[0]}
+                    </div>
+                ))}
+
+                {/* <div name="newTickets" 
                     className={"item list-group-item " + (this.getActiveState() === "newTickets" ? "active" : "")}
                     onClick={(e)=>this.handleClick(e)}
                     >New Tickets
@@ -49,7 +61,7 @@ class SidebarNav extends Component {
                     className={"item list-group-item " + (this.getActiveState() === "createTicket" ? "active" : "")}
                     onClick={(e)=>this.handleClick(e)}
                     >Create Ticket
-                </div>
+                </div> */}
             </div>
          );
     }
