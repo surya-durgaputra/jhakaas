@@ -1,7 +1,7 @@
 import React from 'react';
 import SidebarNav from '../navigation/SidebarNav'
 import SidebarNavAdmin from '../navigation/SidebarNavAdmin'
-import Ticket from '../forms/Ticket'
+import Tickets from '../forms/Tickets'
 import NewTicket from '../forms/NewTicket'
 import AdminForm from '../forms/AdminForm'
 
@@ -26,7 +26,7 @@ console.log("isAdmin:",data.domain.isAdmin)
         let component 
         switch (data.domain.menu.user.activeMenu){
             case "allTickets" :
-                                component = <Ticket tickets={data.entity.tickets}></Ticket>
+                                component = <Tickets tickets={data.entity.tickets}></Tickets>
                                 break
             case "createTicket" :
                                 component = <NewTicket></NewTicket>

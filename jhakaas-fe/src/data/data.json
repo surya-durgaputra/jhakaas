@@ -64,7 +64,7 @@
       { "id": 5,
         "to": "monoprix@intnet.mu",
         "from": "myawesomecompany@gmail.com",
-        "subject": "lorem ipsum",
+        "subject": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. , sed diam voluptua.",
         "department":"R&D",
         "channel":"email",
@@ -141,7 +141,7 @@
         ]
       },
       "user":{
-        "activeMenu":"createTicket",
+        "activeMenu":"allTickets",
         "entries":[
           {"allTickets":"All Tickets"}, 
           {"createTicket":"Create Ticket"}
