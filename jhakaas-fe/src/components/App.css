@@ -4,4 +4,9 @@
   min-height: 100vh;
 }
 
+/* Global styles*/
+.label-left-align{
+  text-align: left;
+  width: 100%;
+}
 

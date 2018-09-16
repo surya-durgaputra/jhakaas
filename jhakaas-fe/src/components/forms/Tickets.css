@@ -1,0 +1,23 @@
+.tickets{
+    /* border-radius: 3px; */
+    padding: 0 10px 10px 10px;
+    
+    
+}
+.tickets .t-item{
+    /* padding: 10px; */
+    cursor: pointer;
+    background: #FFE0B5;
+}
+.tickets .t-item:hover{
+    background: #FFD52D;
+    font-weight: bold;
+    color: black;
+}
+
+.tickets .t-item.active{
+    background: rgb(255, 204, 1);
+    font-weight: bold;
+    color: black;
+    border: none;
+}
